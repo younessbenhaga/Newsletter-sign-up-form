@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body{
+   
+    background: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0;
+    font-size:  16px;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.display{
+    display: none;
+}
+
+main{
+    width: 870px;
+    height: 540px;
+    background: white;
+    display: flex;
+    border-radius: 40px;
+
+}
+.first , .second{
+    height: 100%;
+    width: 50%;
+    
+}
+.second img{
+    width: 80%;
+    float: right;
+    height: 92%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.first h1{
+    text-align: center;
+    margin-top: 80px;
+    color:  hsl(234, 29%, 20%);
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+h5{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+p img{
+    width: 15px;
+    margin-left: 30px;
+}
+label{
+    
+    color:  hsl(234, 29%, 20%);
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+#error{
+    
+    width: max-content;
+    text-align: end;
+    order: 1;
+    color: red;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.label{
+    display: flex; 
+    margin-left: 10px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 70px;
+    
+}
+#email{
+    margin-top: 8px;
+    width: 78%;
+    height: 8%;
+   margin-left: 30px;
+   border: 1px solid grey;
+   border-radius: 7px;
+   padding-left: 10px;
+   font-size: large;
+   font-family: 'Lato', sans-serif;
+
+}
+/* hjjjjjjjjjjjjjjjjj */
+button{
+    border-radius: 7px;
+    border: 1px solid grey;
+    width: 79.7%;
+    height: 10%;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+button:hover{
+    background-color:hsl(4, 100%, 67%) ;
+    box-shadow:0 0 2em  hsl(4, 100%, 67%);
+    border: none;
+}
+
+
+section{
+    width: 400px;
+    height: max-content;
+    background-color: white;
+    border-radius: 40px;
+    font-family: 'Lato', sans-serif;
+    
+
+}
+.confirm{
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 6%;
+
+}
+section h1{
+    font-size: 33px;
+    font-family: 'Roboto', sans-serif; 
+
+}
+section p{
+    color: rgb(87, 84, 84);
+}
+.confirm input{
+    border-radius: 7px;
+    border: 1px solid grey;
+    width: 79.7%;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+}
+.confirm input:hover{
+    background-color:hsl(4, 100%, 67%) ;
+    box-shadow:0 0 2em  hsl(4, 100%, 67%);
+    border: none;
+}
+
+
+@media (max-width:720px) {
+    .first h1{
+        font-size: 40px;
+    }
+    .first p{
+        font-size: small;
+    }
+    h5{
+        align-items: start;
+        margin-left: 4px;
+    }
+    p img , .label, #email, button{
+        margin-left: 10px;
+    }
+   
+}
+
+@media (max-width:375px) {
+    body{
+        background-color: white;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        display: grid;
+        margin: 0;
+    }
+    .second img{
+        display: none;
+    }
+    .second{
+        background-image: url('../assets/images/illustration-sign-up-mobile.svg');
+        width: 100%;
+        display: block;
+        
+        order: 1;
+       
+        border-bottom-left-radius:20px ;
+        border-bottom-right-radius: 20px;
+        margin-bottom: 0px;
+        background-size:cover;
+        background-position: center;
+    }
+    .first{
+        margin-top: 0px;
+        width: 100%;
+        order: 2;
+      
+
+    }
+    .first h1{
+        margin-top: 30px;
+        margin-left: 20px;
+        text-align: start;
+
+    }
+    .first p{
+        font-size:large;
+        margin-left: 20px;
+    }
+    h5{
+        align-items: start;
+        margin-left: 20px;
+        font-size: large;
+    }
+    p img ,.label,#email,button{
+        margin-left: 20px;
+    }
+    section{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+
+    }
+    .confirm{
+        margin-top: 100px;
+    }
+    .confirm input{
+        margin-top: 100px;
+    }
+    .confirm h1{
+        font-size: 45px;
+    }
+    .confirm p{
+        font-size: 16px;
+    }
+}
+.errorClass{
+    background-color: #ffe8e6;
+}
+
+
+
+
+
+
